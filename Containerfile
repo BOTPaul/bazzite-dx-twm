@@ -2,7 +2,6 @@ ARG BASE_IMAGE
 
 FROM scratch AS ctx
 
-COPY system_files /files
 COPY build_files /build_files
 
 FROM ${BASE_IMAGE}
