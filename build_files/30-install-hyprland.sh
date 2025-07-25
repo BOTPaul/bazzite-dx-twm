@@ -55,7 +55,3 @@ dnf5 install -y --setopt=install_weak_deps=False \
     qt5-qtwayland \
     qt6-qtwayland \
     sddm
-
-dnf5 -y copr disable solopasha/hyprland
-dnf5 -y copr disable erikreider/SwayNotificationCenter
-dnf5 -y copr disable pgdev/ghostty
