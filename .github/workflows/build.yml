@@ -1,5 +1,5 @@
 ---
-name: Build Bazzite DX
+name: Build Bazzite DX TWM
 on:
   merge_group:
   pull_request:
@@ -30,9 +30,6 @@ jobs:
       fail-fast: false
       matrix:
         base_image:
-          - bazzite-deck
-          - bazzite-deck-gnome
-          - bazzite-deck-nvidia-gnome
           - bazzite-deck-nvidia
 
     env:

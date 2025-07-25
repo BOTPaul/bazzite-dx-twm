@@ -1,35 +1,16 @@
-# Bazzite Developer Edition
+# Bazzite Developer Edition - TWM
 
-[![Build Bazzite DX](https://github.com/ublue-os/bazzite-dx/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/bazzite-dx/actions/workflows/build.yml)
-
-This is just bazzite, but with extra developer-specific tooling, aiming to match [Bluefin DX](https://docs.projectbluefin.io/bluefin-dx/) and [Aurora DX](https://docs.getaurora.dev/dx/aurora-dx-intro) in functionality
-
-[`bazzite-gdx`](https://github.com/ublue-os/bazzite-gdx) will source from here and be focused for game development.
+This is just a fork of [bazzite-dx](https://github.com/ublue-os/bazzite-dx), but with Hyprland.
 
 ## Installation
 
-To rebase an existing Bazzite installation to Bazzite DX, use one of the following commands based on your current variant:
-
-**For KDE Plasma (default Bazzite):**
-```bash
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/bazzite-dx:stable
-```
-
-**For GNOME:**
-```bash
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/bazzite-dx-gnome:stable
-```
+To rebase an existing Bazzite installation to Bazzite DX TWM, use one of the following commands based on your current variant:
 
 ### NVIDIA Variants
 
 **For KDE Plasma with NVIDIA:**
 ```bash
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/bazzite-dx-nvidia:stable
-```
-
-**For GNOME with NVIDIA:**
-```bash
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/bazzite-dx-nvidia-gnome:stable
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/botpaul/bazzite-dx-twm:stable
 ```
 
 ### ⚠️ Important Desktop Environment Warning
@@ -44,8 +25,6 @@ After running the rebase command, reboot your system to complete the installatio
 
 ## Acknowledgments
 
-This project is built upon the work from [amyos](https://github.com/astrovm/amyos)
+This project is built upon the work from [bazzite-dx](https://github.com/ublue-os/bazzite-dx) which itself was built upon the work from [amyos](https://github.com/astrovm/amyos)
 
-## Metrics
-
-![Alt](https://repobeats.axiom.co/api/embed/8568b042f7cfba9dd477885ed5ee6573ab78bb5e.svg "Repobeats analytics image")
+Thanks to [jerhage/bazzite-custom](https://github.com/jerhage/bazzite-custom) which I used as a quick start to setup hyprland
