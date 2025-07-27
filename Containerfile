@@ -3,6 +3,7 @@ ARG BASE_IMAGE
 FROM scratch AS ctx
 
 COPY build_files /build_files
+COPY services /usr/lib/systemd/user/
 
 FROM ${BASE_IMAGE}
 
